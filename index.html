@@ -43,6 +43,9 @@
         width: 20%;
         
       }
+      button:hover{
+         background-color: #f55e06;
+      }
       .toDo-container{
         display: block;
         margin-top: 20px;
@@ -56,7 +59,7 @@
       }
  
       p::before{
-        content: "done";
+        content: "Done";
         color: green;
         width: 80px ;
         height: 40px !;
@@ -77,7 +80,7 @@
         </div>
         <div class="toDo-container"></div>
     </main>
-    <script>
+ <script>
     let container=document.querySelector(".toDo-container")
     let input=document.querySelector("#input")
      function addToDo(){
@@ -115,6 +118,8 @@
        container.innerHTML=localStorage.getItem("data")
      }
      showData();
-        </script>
+        </script> 
 </body>
 </html>
+
+ 
